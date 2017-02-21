@@ -180,7 +180,7 @@ which is simply the detailed balance condition. We used $$T(x \mid x')$$ to deno
 
 ### Gibbs sampling
 
-A widely-used special case of teh Metropolis-Hastings methods is Gibbs sampling. Given an ordered set of variables $$x_1,...,x_n$$ and a starting configuration $$x^0 = (x_1^0,...,x_n^0)$$, we iterate through the variables one at a time; at each time step $$t$$, we:
+A widely-used special case of the Metropolis-Hastings methods is Gibbs sampling. Given an ordered set of variables $$x_1,...,x_n$$ and a starting configuration $$x^0 = (x_1^0,...,x_n^0)$$, we iterate through the variables one at a time; at each time step $$t$$, we:
 
 1. Sample $$x_i' \sim p(x_i \mid x_{-i}^t)$$
 2. Set $$x^{t+1} = (x_1^t, ..., x_i', ..., x_n^0).$$
